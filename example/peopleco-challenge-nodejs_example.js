@@ -28,9 +28,7 @@ peoplecoChallengeNodejs.retrieveBoards(baseUrl, yourBaseUrl, function(boards) {
                     //handle result of move!
                     moveResult = JSON.parse("" + moveResult);
                     if (!moveResult.is_hit) {
-                        peoplecoChallengeNodejs.makeMove(boardResult, coordinate, baseUrl, yourBaseUrl, function(result) {
-                            console.log("" + result);
-                        });
+                        break;
                     }
                 });
 
